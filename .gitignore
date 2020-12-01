@@ -1,3 +1,4 @@
+git config core.fileMode false
 /.buildpath
 /.cache
 /.metadata
