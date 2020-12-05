@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3c83d00f5c1a9e67c9e7f6acc484d79c",
+    "content-hash": "cda34337b1857c5b487fddd69dbfc313",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -17711,6 +17711,33 @@
                 "phar"
             ],
             "time": "2020-07-07T18:42:57+00:00"
+        },
+        {
+            "name": "snowdog/theme-blank-sass",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SnowdogApps/magento2-theme-blank-sass.git",
+                "reference": "14f1e6d4944c632e6f5cd46dbbcb31bbc9570809"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SnowdogApps/magento2-theme-blank-sass/zipball/14f1e6d4944c632e6f5cd46dbbcb31bbc9570809",
+                "reference": "14f1e6d4944c632e6f5cd46dbbcb31bbc9570809",
+                "shasum": ""
+            },
+            "type": "magento2-theme",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "SASS based version of Magento 2 Blank theme",
+            "time": "2020-10-26T12:38:16+00:00"
         },
         {
             "name": "spomky-labs/otphp",
