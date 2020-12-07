@@ -41,9 +41,9 @@ class MyFirstCommand extends Command
      * @param InputInterface $input
      * @param OutputInterface $output
      *
-     * @return null|int
+     * @return MyFirstCommand
      */
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): MyFirstCommand
     {
         if ($name = $input->getOption(self::NAME)) {
             $output->writeln('<info>Provided name is `' . $name . '`</info>');

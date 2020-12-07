@@ -10,6 +10,7 @@
         <arguments>
             <argument name="commands" xsi:type="array">
                 <item name="my_first_command" xsi:type="object">Maikel\Learn\Console\Command\MyFirstCommand</item>
+                <item name="say_hello" xsi:type="object">Maikel\Learn\Console\Command\SayHello</item>
             </argument>
         </arguments>
     </type>
