@@ -9,10 +9,10 @@ use Magento\Framework\App\Action\HttpGetActionInterface;
 class Index implements HttpGetActionInterface
 {
 
-    /** @var \Magento\Framework\App\Action\Context */
+    /** @var Magento\Framework\App\Action\Context */
     protected $_context;
 
-    /** @var \Magento\Framework\View\Result\PageFactory */
+    /** @var Magento\Framework\View\Result\PageFactory */
 	protected $_pageFactory;
 
 	public function __construct(
