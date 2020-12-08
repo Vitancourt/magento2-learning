@@ -7,6 +7,6 @@
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
-        <add id="Maikel_Learn::product" title="Maikel product" translate="title" module="Maikel_Learn" sortOrder="20" dependsOnModule="Maikel_Learn" resource="Maikel_Learn::catalog"/>
+        <add id="Maikel_Learn::product" title="Maikel product" translate="title" module="Maikel_Learn" sortOrder="20" dependsOnModule="Maikel_Learn" resource="Maikel_Learn::product"/>
     </menu>
 </config>
