@@ -6,16 +6,13 @@ namespace Maikel\Learn\Cron;
 
 class Test
 {
+    public function execute(): Test
+    {
+        $writer = new \Zend\Log\Writer\Stream(BP . '/var/log/cron.log');
+        $logger = new \Zend\Log\Logger();
+        $logger->addWriter($writer);
+        $logger->info(__METHOD__);
 
-	public function execute()
-	{
-		$writer = new \Zend\Log\Writer\Stream(BP . '/var/log/cron.log');
-		$logger = new \Zend\Log\Logger();
-		$logger->addWriter($writer);
-		$logger->info(__METHOD__);
-
-		return $this;
-
-
-	}
+        return $this;
+    }
 }

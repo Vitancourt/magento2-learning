@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Maikel\Learn\Controller\Foward;
 
 use Magento\Framework\App\Action\HttpGetActionInterface;
-use Magento\Framework\Controller\Result\Forward;
 use Magento\Framework\Controller\Result\ForwardFactory;
 
 class Index implements HttpGetActionInterface
@@ -14,7 +13,7 @@ class Index implements HttpGetActionInterface
     /**
      * @var ForwardFactory
      */
-    private $forwardFactory;
+    private ForwardFactory $forwardFactory;
 
     /**
      * @param ForwardFactory $forwardFactory
@@ -28,11 +27,9 @@ class Index implements HttpGetActionInterface
     /**
      * @inheritdoc
      */
-    public function execute()
+    public function execute(): \Magento\Framework\Controller\ResultInterface|\Magento\Framework\App\ResponseInterface|\Magento\Framework\Controller\Result\Forward
     {
-        /** @var Forward $forward */
         $forward = $this->forwardFactory->create();
         return $forward->forward('defaultNoRoute');
     }
-
 }

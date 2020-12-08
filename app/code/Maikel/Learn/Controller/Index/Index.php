@@ -9,22 +9,20 @@ use Magento\Framework\App\Action\HttpGetActionInterface;
 class Index implements HttpGetActionInterface
 {
 
-    /** @var Magento\Framework\App\Action\Context */
-    protected $_context;
+    protected \Magento\Framework\App\Action\Context $_context;
 
-    /** @var Magento\Framework\View\Result\PageFactory */
-	protected $_pageFactory;
+    protected \Magento\Framework\View\Result\PageFactory $_pageFactory;
 
-	public function __construct(
-		\Magento\Framework\App\Action\Context $context,
-		\Magento\Framework\View\Result\PageFactory $pageFactory)
-	{
+    public function __construct(
+        \Magento\Framework\App\Action\Context $context,
+        \Magento\Framework\View\Result\PageFactory $pageFactory
+    ) {
         $this->_context = $context;
-		$this->_pageFactory = $pageFactory;
-	}
+        $this->_pageFactory = $pageFactory;
+    }
 
-	public function execute()
-	{
-		return $this->_pageFactory->create();
-	}
+    public function execute(): \Magento\Framework\View\Result\Page
+    {
+        return $this->_pageFactory->create();
+    }
 }
