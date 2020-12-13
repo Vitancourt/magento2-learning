@@ -27,7 +27,7 @@ class Index implements HttpGetActionInterface
     /**
      * @inheritdoc
      */
-    public function execute(): \Magento\Framework\Controller\ResultInterface|\Magento\Framework\App\ResponseInterface|\Magento\Framework\Controller\Result\Forward
+    public function execute(): \Magento\Framework\Controller\ResultInterface
     {
         $forward = $this->forwardFactory->create();
         return $forward->forward('defaultNoRoute');
