@@ -8,4 +8,10 @@ use Magento\Framework\View\Element\Template;
 
 class Index extends Template
 {
+
+    public function getName(): String
+    {
+        return 'Maikel';
+    }
+
 }
