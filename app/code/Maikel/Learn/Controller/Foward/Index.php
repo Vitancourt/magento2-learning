@@ -13,7 +13,7 @@ class Index implements HttpGetActionInterface
     /**
      * @var ForwardFactory
      */
-    private ForwardFactory $forwardFactory;
+    private $forwardFactory;
 
     /**
      * @param ForwardFactory $forwardFactory

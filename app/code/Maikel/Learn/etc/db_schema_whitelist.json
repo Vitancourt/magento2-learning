@@ -1,0 +1,22 @@
+{
+    "maikel_learn_teste": {
+        "column": {
+            "value_id": true,
+            "attribute_id": true,
+            "store_id": true,
+            "entity_id": true,
+            "value": true
+        },
+        "index": {
+            "MAIKEL_LEARN_TESTE_ATTRIBUTE_ID": true,
+            "MAIKEL_LEARN_TESTE_STORE_ID": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "MAIKEL_LEARN_TESTE_ATTRIBUTE_ID_EAV_ATTRIBUTE_ATTRIBUTE_ID": true,
+            "MAIKEL_LEARN_TESTE_ENTITY_ID_CATALOG_PRODUCT_ENTITY_ENTITY_ID": true,
+            "MAIKEL_LEARN_TESTE_STORE_ID_STORE_STORE_ID": true,
+            "MAIKEL_LEARN_TESTE_ENTITY_ID_ATTRIBUTE_ID_STORE_ID": true
+        }
+    }
+}
